@@ -21,8 +21,8 @@
   }
 
   #selectContainer {
-    background-color: hsl(0, 0%, 10%);
-    border: 1px solid hsl(0, 0%, 20%);
+    background-color: hsl(0, 0%, 15%);
+    border: 1px solid hsl(0, 0%, 30%);
     border-radius: 0.2em;
     width: 100%
   }
@@ -47,18 +47,16 @@
   }
 
   #arrowPositioner {
+    width: 100%;
     position: relative;
-    height: 0;
-    width: 0;
-    float: right;
-    right: 25px;
-    top: 10px;
+    bottom: 25px;
+    right: 8px;
   }
 
   #arrowDiv {
-    display: inline-block;
     height: 1em;
     width: 1em;
+    float: right;
   }
 </style>
 
@@ -66,7 +64,7 @@
   <p id='title'>{title}</p>
   {#if items && items.length > 0}
   <div id='selectContainer' style={(defaultSelected) ? '' : 'border-color: hsl(204, 80%, 63%)'}>
-    <select bind:value={value} style={(defaultSelected) ? 'color: hsl(0, 0%, 40%)' : ''}>
+    <select bind:value={value} style={(defaultSelected) ? 'color: hsl(0, 0%, 50%)' : ''}>
       {#each items as item}
       <option value={item.value}>
         {item.label}
