@@ -6,8 +6,8 @@
 	import FilterForm from './components/FilterForm.svelte';
 	import CardDisplay from './components/CardDisplay.svelte';
 
-	// const baseurl = 'https://hslookup.herokuapp.com/';
-	const baseurl = 'http://localhost:5000/'; // for testing locally
+	const baseurl = 'https://hslookup.herokuapp.com/';
+	// const baseurl = 'http://localhost:5000/'; // for testing locally
 
 	// Default query values
 	let region = 'us';
