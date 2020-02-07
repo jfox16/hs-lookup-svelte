@@ -1,40 +1,25 @@
 <script>
   export let onClick;
-  export let text;
+	export let text;
 </script>
 
 <style>
-  #inset {
-    display: block;
-		margin: auto;
-
-		border-top: 0.15em solid hsla(0, 0%, 0%, 0.3);
-		border-left: 0.15em solid hsla(0, 0%, 100%, 0.05);
-		border-right: 0.15em solid hsla(0, 0%, 100%, 0.05);
-		border-bottom: 0.15em solid hsla(0, 0%, 100%, 0.1);
-		border-radius: 0.7em;
-  }
   
 	button {
     margin: 0;
 		padding: 0.7em;
 		width: 100%;
-
 		background-color: hsl(30, 90%, 50%);
+		border-top: 4px solid hsla(0, 0%, 100%, 0.3);
+		border-left: 4px solid hsla(0, 0%, 0%, 0.1);
+		border-right: 4px solid hsla(0, 0%, 100%, 0.1);
+		border-bottom: 4px solid hsla(0, 0%, 0%, 0.3);
 		color: white;
-		
-		border-top: 0.2em solid hsla(0, 0%, 100%, 0.3);
-		border-left: 0.2em solid hsla(0, 0%, 0%, 0.1);
-		border-right: 0.2em solid hsla(0, 0%, 0%, 0.1);
-		border-bottom: 0.2em solid hsla(0, 0%, 0%, 0.3);
-		border-radius: 0.5em;
-
-    transition: box-shadow 0.1s;
+		border-radius: 6px;
 	}
 
 	button:hover {
 		background-color: hsl(30, 100%, 55%);
-    /* box-shadow: 0 0 3px 1px hsl(0, 0%, 100%); */
 		cursor: pointer;
 	}
 
@@ -44,6 +29,6 @@
 </style>
 
 
-<div id='inset'>
-  <button on:click={onClick}>{text}</button>
+<div class='innerBevel' style='display: block; border-radius: 10px;'>
+  <button style='border-radius: 6px' on:click={onClick}>{text}</button>
 </div>

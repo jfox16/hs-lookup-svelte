@@ -1,6 +1,23 @@
 <script>
+  import {LazyLoadContainer, LazyLoad} from 'svelte-lazyload';
   export let cards;
 </script>
+
+<style>
+  #cardImgContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+  }
+  .cardImgDiv {
+    width: 100px;
+    flex-grow: 1;
+  }
+  .cardImgDiv img {
+    width: 100%;
+  }
+</style>
 
 <div>
   {#if !cards}
@@ -10,8 +27,17 @@
   {:else if cards.length === 0}
     <p>No cards found. Try a different query!</p>
   {:else}
-    {#each cards as card}
-      <p>{card.name}</p>
-    {/each}
+    <p>{cards.length} Cards</p>
+    <LazyLoadContainer>
+    <div id='cardImgContainer'>
+      {#each cards as card}
+        <div class='cardImgDiv'>
+          <LazyLoad id={card.id}>
+            <img src={card.image} alt={card.name} key={card.id}/>
+          </LazyLoad>
+        </div>
+      {/each}
+    </div>
+    </LazyLoadContainer>
   {/if}
 </div>

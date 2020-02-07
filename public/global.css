@@ -67,3 +67,17 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+
+.innerBevel {
+	border-top: 3px solid hsla(0, 0%, 0%, 0.3);
+	border-left: 3px solid hsla(0, 0%, 100%, 0.05);
+	border-right: 3px solid hsla(0, 0%, 0%, 0.05);
+	border-bottom: 3px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.outerBevel {
+	border-top: 4px solid hsla(0, 0%, 100%, 0.3);
+	border-left: 4px solid hsla(0, 0%, 0%, 0.1);
+	border-right: 4px solid hsla(0, 0%, 100%, 0.1);
+	border-bottom: 4px solid hsla(0, 0%, 0%, 0.3);
+}

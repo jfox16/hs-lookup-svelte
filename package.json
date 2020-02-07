@@ -20,6 +20,7 @@
     "sirv-cli": "^0.4.4",
     "svelte-accordion": "^0.0.0-development",
     "svelte-icons": "^1.1.0",
+    "svelte-lazyload": "^0.0.4",
     "svelte-select": "^3.3.7"
   }
 }

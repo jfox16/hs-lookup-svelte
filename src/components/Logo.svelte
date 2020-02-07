@@ -4,12 +4,13 @@
 <style>
   
   #logo-div {
-    background-color: hsla(0, 0%, 10%);
+    background-color: hsla(0, 0%, 20%);
     display: inline-block;
 		padding: 10px;
     font-size: 26px;
     color: white;
-    z-index: 10;
+    width: 100%;
+    border-bottom: 4px solid hsla(0, 0%, 0%, 0.2);
   }
 
   #logo-div:hover {

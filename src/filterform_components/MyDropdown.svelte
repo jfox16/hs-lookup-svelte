@@ -23,7 +23,7 @@
   #selectContainer {
     background-color: hsl(0, 0%, 15%);
     border: 1px solid hsl(0, 0%, 30%);
-    border-radius: 0.2em;
+    border-radius: 3px;
     width: 100%
   }
 
@@ -34,9 +34,9 @@
     box-shadow: none;
     background: transparent;
     background-image: none;
-    -webkit-appearance: none;
     line-height: 1.5em;
     color: hsl(0, 0%, 90%);
+    -webkit-appearance: none;
   }
 
   #selectContainer select option {
@@ -57,6 +57,7 @@
     height: 1em;
     width: 1em;
     float: right;
+    color: hsl(0, 0%, 80%);
   }
 </style>
 
